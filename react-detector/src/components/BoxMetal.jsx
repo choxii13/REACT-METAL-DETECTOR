@@ -1,7 +1,9 @@
-const BoxMetal = ({ x, y }) => {
+import style from "./app.module.css";
+import MyObject from "./MyObject";
+const BoxMetal = ({ images }) => {
   return (
-    <div className="box-metal">
-      <h3 className="metal-box">METAL</h3>
+    <div className={`${style.boxmetal} ${style.add}`}>
+      <h3 className={style.metalbox}>Metal</h3>
     </div>
   );
 };

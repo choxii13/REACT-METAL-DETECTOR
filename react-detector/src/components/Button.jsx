@@ -1,8 +1,9 @@
+import style from "./app.module.css";
 const Button = () => {
   return (
-    <div className="button">
-      <div className="check-items">Check Item</div>
-      <div className="reset">Reset Game</div>
+    <div className={style.button}>
+      <div className={style.checkitems}>Check Item</div>
+      <div className={style.reset}>Reset Game</div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
+import style from "./app.module.css";
 const BoxNotMetal = () => {
   return (
-    <div className="box-not-metal">
-      <h3 className="non-metal-box">Non-Metal</h3>
+    <div className={`${style.boxnotmetal} ${style.add}`}>
+      <h3 className={style.nonmetalbox}>Non-Metal</h3>
     </div>
   );
 };
