@@ -1,18 +1,33 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import topY from "./Vh";
 import leftX from "./VW";
 import MyObject from "./MyObject";
-import BoxMetal from "./BoxMetal";
-import BoxNotMetal from "./BoxNotMetal";
+import MyBox from "./MyBox";
+import style from "./main.module.css";
+import MyBoxArgument from "./MyBoxArgument";
+import SensorArgument from "./SensorArgument";
 import SensorContainer from "./SensorContainer";
-import Button from "./Button";
-import style from "./app.module.css";
-const ContainerImage = () => {
+import MyButton from "./MyButton";
+
+const MainContent = () => {
   const [images, setImage] = useState(MyObject);
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  const [x, setX] = useState(null);
+  const [y, setY] = useState(null);
   const [id, setId] = useState("");
-  const HandleDragEnd = (id, e) => {
+  const [drag, setDrag] = useState(true);
+  const [className, setClassName] = useState("");
+  const [imagelink, setImageLink] = useState(null);
+  const { designMetal, designNonMetal, sensor } = MyBoxArgument({
+    x,
+    y,
+    id,
+    className,
+    imagelink,
+    drag,
+  });
+  const { opaque } = SensorArgument({ sensor, id });
+
+  const HandleDragEnd = (id, className, link, e) => {
     const a = leftX(e.clientX - 5);
     const b = topY(e.clientY - 5);
     const updatedItems = images.map((item) =>
@@ -24,15 +39,18 @@ const ContainerImage = () => {
           }
         : item
     );
-
     setImage(updatedItems);
     setId(id);
     setX(a);
     setY(b);
-    window.removeEventListener("drag", HandleDragEnd);
+    setDrag(false);
+    setClassName(className);
+    setImageLink(link);
   };
-  console.log(x);
-  console.log(y);
+  const HandleDrag = () => {
+    setDrag(true);
+  };
+
   return (
     <>
       {images &&
@@ -42,7 +60,10 @@ const ContainerImage = () => {
             <img
               id={image.id}
               src={image.link}
-              onDragEnd={(e) => HandleDragEnd(image.id, e)}
+              onDragEnd={(e) =>
+                HandleDragEnd(image.id, image.class, image.link, e)
+              }
+              onDrag={HandleDrag}
               style={{
                 position: "absolute",
                 objectFit: "contain",
@@ -55,14 +76,14 @@ const ContainerImage = () => {
             />
           </div>
         ))}
-      <BoxMetal images={images} />
-      <BoxNotMetal />
+
+      <MyBox designMetal={designMetal} designNonMetal={designNonMetal} />
       <div className={style.screenname}>
-        <SensorContainer id={id} />
-        <Button />
+        <SensorContainer opaque={opaque} drag={drag} />
+        <MyButton />
       </div>
     </>
   );
 };
 
-export default ContainerImage;
+export default MainContent;

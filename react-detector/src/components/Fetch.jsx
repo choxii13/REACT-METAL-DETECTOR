@@ -1,23 +1,25 @@
 import { useEffect, useState } from "react";
 
 const Fetch = (url) => {
-  const [images, setImages] = useState("");
+  const [data, setData] = useState(null);
   useEffect(() => {
     fetch(url)
       .then((res) => {
         return res.json();
       })
-      .then((data) => setImages(data))
+      .then((data) => {
+        setData(data);
+      })
       .catch((err) => {
         console.log(err);
       });
+
     return () => {
       console.log("clean up");
     };
   }, [url]);
-  return {
-    images,
-  };
+
+  return { data };
 };
 
 export default Fetch;

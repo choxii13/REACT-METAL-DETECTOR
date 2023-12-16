@@ -1,10 +1,11 @@
-import ContainerImage from "./ContainerImage";
-import style from "./app.module.css";
+import MainContent from "./MainContent";
+
+import style from "./main.module.css";
 const MainContainer = () => {
   return (
     <>
       <div className={style.containerall}>
-        <ContainerImage />
+        <MainContent />
       </div>
     </>
   );

@@ -193,16 +193,6 @@
   font-size: 2vw;
 }
 
-.addbg {
-  background: rgba(238, 27, 27, 0.8);
-  box-shadow: 0 0 1vh 0.1vh rgb(135, 19, 36);
-  border: 0.1vh solid rgba(1, 1, 1, 0.8);
-  transition: all 0.5s ease-in;
-}
-.addred {
-  animation: removeborder 0.5s linear;
-}
-
 .boxmetal {
   width: 20vw;
   height: 35vh;
