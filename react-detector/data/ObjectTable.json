@@ -1,74 +1,49 @@
 {
   "Table": [
     {
-      "class": "metal",
-      "id": "bell",
-      "link": "images/bell.gif"
+      "id": "watch",
+      "className": "metal",
+      "imagelink": "images/watch.gif"
     },
     {
-      "class": "metal",
-      "id": "padlock",
-      "link": "images/padlock.gif"
-    },
-    {
-      "class": "metal",
       "id": "gold-ring",
-      "link": "images/gold-ring.gif"
+      "className": "metal",
+      "imagelink": "images/gold-ring.gif"
     },
     {
-      "class": "metal",
-      "id": "cellphone",
-      "link": "images/cellphone.gif"
-    },
-    {
-      "class": "metal",
-      "id": "coin",
-      "link": "images/coin.gif"
-    },
-    {
-      "class": "metal",
-      "id": "gold",
-      "link": "images/gold.gif"
-    },
-    {
-      "class": "metal",
-      "id": "monitor",
-      "link": "images/monitor.gif"
-    },
-    {
-      "class": "metal",
-      "id": "steel",
-      "link": "images/steel.gif"
-    },
-    {
-      "class": "metal",
       "id": "key",
-      "link": "images/key.gif"
+      "className": "metal",
+      "imagelink": "images/key.gif"
     },
     {
-      "class": "metal",
+      "id": "cellphone",
+      "className": "metal",
+      "imagelink": "images/cellphone.gif"
+    },
+    {
       "id": "magnet",
-      "link": "images/magnet.gif"
+      "className": "metal",
+      "imagelink": "images/magnet.gif"
     },
     {
-      "class": "metal",
-      "id": "sword",
-      "link": "images/sword.gif"
+      "id": "cross",
+      "className": "metal",
+      "imagelink": "images/cross.gif"
     },
     {
-      "class": "non-metal",
-      "id": "sunglasses",
-      "link": "images/sunglasses.gif"
-    },
-    {
-      "class": "non-metal",
       "id": "rubics-cube",
-      "link": "images/rubics-cube.gif"
+      "className": "non-metal",
+      "imagelink": "images/rubics-cube.gif"
     },
     {
-      "class": "non-metal",
       "id": "short",
-      "link": "images/short.gif"
+      "className": "non-metal",
+      "imagelink": "images/short.gif"
+    },
+    {
+      "id": "cat",
+      "className": "non-metal",
+      "imagelink": "images/cat.gif"
     }
   ]
 }

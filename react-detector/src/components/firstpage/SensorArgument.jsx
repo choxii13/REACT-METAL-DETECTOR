@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import style from "./main.module.css";
 const SensorArgument = ({ sensor, id }) => {
   const [opaque, setOpaque] = useState(null);
-
   useEffect(() => {
     sensor === "metal"
       ? setOpaque(<p className={style.opaque}>{id}</p>)

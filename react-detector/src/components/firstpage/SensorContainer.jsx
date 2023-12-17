@@ -4,7 +4,6 @@ const SensorContainer = ({ drag, opaque }) => {
   return (
     <div className={style.sensorcontainer}>
       <div className={style.sensor}>{!drag && opaque} </div>
-      <CreateTable />
     </div>
   );
 };

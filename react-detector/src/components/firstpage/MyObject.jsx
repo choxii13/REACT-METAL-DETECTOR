@@ -105,7 +105,6 @@ export default function MyObject() {
       top: null,
       left: null,
     },
-
     {
       class: "non-metal",
       id: "bottle",

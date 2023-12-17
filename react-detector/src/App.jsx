@@ -1,11 +1,20 @@
-import Fetch from "./components/Fetch";
-import MainContainer from "./components/MainContainer";
-import MyTable from "./components/MyTable";
+import { useEffect, useState } from "react";
+import MainContent from "./components/firstpage/MainContent";
+import MyTable from "./components/secondpage/MyTable";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FetchingData from "./components/secondpage/FetchingData";
 
 function App() {
-  const { data } = Fetch("http://localhost:5000/Table");
-
-  return <>{data && <MyTable data={data} />}</>;
+  const { data } = FetchingData();
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<MainContent />} />
+        <Route path="/" element={<MainContent />} />
+        <Route path="mytable" element={<MyTable data={data} />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
