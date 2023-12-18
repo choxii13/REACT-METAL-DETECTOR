@@ -4,13 +4,13 @@ import SavingData from "./SavingData";
 const CreateTable = ({ metalSave, notMetalSave, id, className, imagelink }) => {
   useEffect(() => {
     const obj = { id, className, imagelink };
-    if (metalSave === true) {
+    if (metalSave) {
       SavingData(obj);
     }
-    if (notMetalSave === true) {
+    if (notMetalSave) {
       SavingData(obj);
     }
-  });
+  }, [metalSave, notMetalSave, id, className, imagelink]);
 };
 
 export default CreateTable;

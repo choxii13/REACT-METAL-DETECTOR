@@ -23,8 +23,8 @@ const MainContent = () => {
     y,
     id,
     className,
-    imagelink,
     drag,
+    imagelink,
   });
 
   const HandleDragEnd = (id, className, link, e) => {
@@ -81,7 +81,7 @@ const MainContent = () => {
         <MyBox designMetal={designMetal} designNonMetal={designNonMetal} />
         <div className={style.screenname}>
           <SensorContainer opaque={opaque} drag={drag} />
-          {images && <MyButton images={images} />}
+          <MyButton />
         </div>
       </div>
     </>

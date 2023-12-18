@@ -1,6 +1,24 @@
 {
   "Table": [
     {
+      "id": "Mis5AR3"
+    },
+    {
+      "id": "GEWMJkr"
+    },
+    {
+      "id": "PatWHcK"
+    },
+    {
+      "id": "onK0UU0"
+    },
+    {
+      "id": "E4FaAPC"
+    },
+    {
+      "id": "iZPNrke"
+    },
+    {
       "id": "watch",
       "className": "metal",
       "imagelink": "images/watch.gif"
@@ -16,34 +34,19 @@
       "imagelink": "images/key.gif"
     },
     {
-      "id": "cellphone",
-      "className": "metal",
-      "imagelink": "images/cellphone.gif"
-    },
-    {
-      "id": "magnet",
-      "className": "metal",
-      "imagelink": "images/magnet.gif"
-    },
-    {
-      "id": "cross",
-      "className": "metal",
-      "imagelink": "images/cross.gif"
-    },
-    {
       "id": "rubics-cube",
       "className": "non-metal",
       "imagelink": "images/rubics-cube.gif"
     },
     {
-      "id": "short",
-      "className": "non-metal",
-      "imagelink": "images/short.gif"
-    },
-    {
       "id": "cat",
       "className": "non-metal",
       "imagelink": "images/cat.gif"
+    },
+    {
+      "id": "dog",
+      "className": "non-metal",
+      "imagelink": "images/dog.gif"
     }
   ]
 }

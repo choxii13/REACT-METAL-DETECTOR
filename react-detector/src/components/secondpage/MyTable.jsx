@@ -3,9 +3,27 @@ import { useEffect, useState } from "react";
 import "./table.css";
 import { Link } from "react-router-dom";
 import DeleteData from "./DeleteData";
-import FetchingData from "./FetchingData";
 
-const MyTable = ({ data }) => {
+const MyTable = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetching();
+  }, []);
+
+  const fetching = () => {
+    fetch("http://localhost:5000/Table")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setData(data);
+      })
+      .catch((err) => {
+        console.log(err + "waa");
+      });
+  };
+
   const [metalSave, setMetalSave] = useState(null);
   const [notmetalSave, setNotMetalSave] = useState(null);
 
@@ -22,12 +40,12 @@ const MyTable = ({ data }) => {
 
   const handleClickMetal = (id) => {
     DeleteData(id);
-    FetchingData();
+    fetching();
   };
 
   const handleClickNotMetal = (id) => {
     DeleteData(id);
-    FetchingData();
+    fetching();
   };
   console.log(data);
   return (
