@@ -1,6 +1,6 @@
 import { createContext, useReducer, useState } from "react";
 import style from "./main.module.css";
-import reducer from "./UseReducer"; // my function and initialization for reducer
+import ImagePosition from "./ImagePosition"; // my function and initialization for reducer
 import { leftX, topY } from "./FunctionsViewport"; // change px to viewport
 import BoxContainer from "./BoxContainer";
 export const UserContext = createContext();
@@ -15,7 +15,7 @@ const ImageContainer = ({ data }) => {
   const [y, setY] = useState(null);
   // end here
   const [drag, setDrag] = useState(false); // for design and saving data
-  const [myDatas, dispatch] = useReducer(reducer, myData); // my reducer function
+  const [myDatas, dispatch] = useReducer(ImagePosition, myData); // my reducer function
 
   const HandleDragEnd = (image, e, className, myId, myLink) => {
     const left = leftX(e.clientX);

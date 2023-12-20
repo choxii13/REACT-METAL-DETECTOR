@@ -1,4 +1,4 @@
-const reducer = (state, action) => {
+const ImagePosition = (state, action) => {
   switch (action.type) {
     case "complete":
       return state.map((todo) => {
@@ -18,4 +18,4 @@ const reducer = (state, action) => {
   }
 };
 
-export default reducer;
+export default ImagePosition;
