@@ -10,7 +10,6 @@ const MainContainer = () => {
     <>
       {err && (
         <div>
-          {" "}
           <NotFound />
         </div>
       )}

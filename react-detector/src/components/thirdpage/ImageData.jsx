@@ -1,7 +1,7 @@
 import "./ImageData.css";
 import { Link } from "react-router-dom";
 
-const ImageData = ({ data }) => {
+const ImageData = ({ image }) => {
   return (
     <>
       <>
@@ -12,10 +12,10 @@ const ImageData = ({ data }) => {
           <div className="check-items"> Check Items</div>
         </Link>
         <div className="container">
-          <h1 className="title"> {data.className}</h1>
+          <h1 className="title"> {image.className}</h1>
           <div className="divdesign"> </div>
-          <img src={`/${data.link}`} className="my-image" />
-          <p className="my-name">{data.id} </p>
+          <img src={`/${image.link}`} className="my-image" />
+          <p className="my-name">{image.id} </p>
         </div>
       </>
     </>

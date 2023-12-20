@@ -1,6 +1,5 @@
-import { useContext, useEffect, useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import style from "./main.module.css";
-import { UserContext } from "./ImageContainer";
 import { myboxdata, reducer } from "./BoxArgument"; // my functions for box container
 import SensorContainer from "./SensorContainer";
 import ButtonContainer from "./ButtonContainer";

@@ -4,7 +4,7 @@ import ImageData from "./ImageData";
 import FetchingData from "../firstpage/FetchingData";
 const ThirdContainer = () => {
   const { id } = useParams();
-  const { content: data, err } = FetchingData(
+  const { content: image, err } = FetchingData(
     `http://localhost:5000/Table/${id}`
   );
   return (
@@ -14,7 +14,7 @@ const ThirdContainer = () => {
           <NotFound />
         </div>
       )}
-      {data && <ImageData data={data} />}
+      {image && <ImageData image={image} />}
     </>
   );
 };

@@ -6,6 +6,7 @@ import { UserContent } from "./SecondContainer";
 const MetalContainer = () => {
   const { content: images, DeleteData } = useContext(UserContent);
   const metal = images && images.filter((item) => item.className === "metal");
+
   const handleClick = (id) => {
     DeleteData(id);
   };
