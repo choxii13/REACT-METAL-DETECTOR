@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainContainer from "./components/firstpage/MainContainer";
 import SecondContainer from "./components/secondpage/SecondContainer";
-
 import NotFound from "./components/notfoundpage/NotFound";
 import ThirdContainer from "./components/thirdpage/ThirdContainer";
 

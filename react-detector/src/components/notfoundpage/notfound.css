@@ -1,7 +1,13 @@
 .not-found {
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: rgb(249, 249, 249);
-  width: 40vw;
+  background-color: rgb(232, 217, 217);
+  width: 35vw;
+  height: 7vh;
   color: red;
+  border-radius: 0.4vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 2vw;
 }

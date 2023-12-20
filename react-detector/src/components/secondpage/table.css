@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik+Doodle+Triangles&display=swap");
 body {
   height: 100vh;
   display: flex;
@@ -14,7 +13,6 @@ body {
     rgb(54, 78, 82) 82%,
     rgb(59, 86, 81) 96%
   );
-  font-family: "Roboto", sans-serif;
 }
 
 .main-container {
