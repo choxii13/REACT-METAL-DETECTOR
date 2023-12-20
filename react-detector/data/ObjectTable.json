@@ -1,3 +1,14 @@
 {
-  "Table": []
+  "Table": [
+    {
+      "className": "metal",
+      "id": "watch",
+      "link": "images/watch.gif"
+    },
+    {
+      "className": "metal",
+      "id": "gold-ring",
+      "link": "images/gold-ring.gif"
+    }
+  ]
 }

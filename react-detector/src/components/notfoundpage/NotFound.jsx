@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./notfound.css";
-const NotFound = ({ err }) => {
-  console.log(err + "2");
+const NotFound = () => {
   return (
     <>
       <div className="not-found">status 404 not found!!!!</div>
