@@ -191,6 +191,9 @@
   );
   border: 0.1vh solid rgb(5, 253, 245);
   font-size: 2vw;
+  letter-spacing: 0.1vw;
+  color: rgb(16, 16, 16);
+  text-shadow: 0px 0px 3px rgb(101, 92, 92);
 }
 
 .boxmetal {

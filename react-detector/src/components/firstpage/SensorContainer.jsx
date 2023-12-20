@@ -1,9 +1,10 @@
-import CreateTable from "./CreateTable";
 import style from "./main.module.css";
-const SensorContainer = ({ drag, opaque }) => {
+const SensorContainer = ({ sensor }) => {
   return (
     <div className={style.sensorcontainer}>
-      <div className={style.sensor}>{!drag && opaque} </div>
+      <div className={style.sensor}>
+        {sensor && <p className={style.opaque}>{sensor}</p>}
+      </div>
     </div>
   );
 };

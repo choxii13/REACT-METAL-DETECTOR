@@ -1,0 +1,7 @@
+.wawa {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(249, 249, 249);
+  width: 40vw;
+  color: red;
+}

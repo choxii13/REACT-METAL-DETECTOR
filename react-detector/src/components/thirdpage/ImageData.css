@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik+Doodle+Triangles&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  top: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  flex-direction: column;
+  border-radius: 1vw;
+  box-shadow: inset 0vw 0vw 4vw 0.1vw rgb(14, 15, 15);
+  height: 90vh;
+  gap: 3vw;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0vw;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3vw;
+}
+
+.divdesign {
+  position: absolute;
+  width: 20vw;
+  height: 60vh;
+  border-radius: 1vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(61, 89, 89);
+  background: linear-gradient(
+    162deg,
+    rgba(61, 89, 89, 1) 5%,
+    rgba(56, 79, 78, 1) 17%,
+    rgba(68, 89, 89, 1) 32%,
+    rgb(108, 142, 140) 47%,
+    rgb(74, 141, 147) 65%,
+    rgb(81, 188, 209) 82%,
+    rgb(41, 178, 153) 96%
+  );
+  box-shadow: 0vw 0vw 0.1vw 0.2vw rgb(21, 209, 209);
+}
+
+.my-image {
+  position: absolute;
+  height: 35vh;
+  width: 15vw;
+  z-index: 2;
+  filter: drop-shadow(0.1vw 0.2vw 1vw rgb(179, 14, 14));
+  object-fit: contain;
+}
+
+.my-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3vw;
+  height: 6vh;
+  width: 11vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.1vw;
+  border-radius: 0.5vw;
+  color: rgb(38, 161, 157);
+  box-shadow: inset 0.1vw 0.1vw 1vw 0.1vw rgb(5, 220, 202);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.homepage-button {
+  position: absolute;
+  background-color: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  width: 10vw;
+  left: 1vw;
+  top: 2vw;
+  border-radius: 1vw;
+  height: 5vh;
+  border: 0.02vw solid aquamarine;
+  transition: box-shadow 0.5s;
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+
+.homepage-button:hover {
+  transition: all 0.5s linear;
+  background-color: aquamarine;
+  box-shadow: 0.2vw 0.2vw 0.2vw 0.05vw rgb(15, 14, 14);
+}
+.homepage-button:active {
+  transition: all 0.5s linear;
+  border: 0.2vw solid rgb(10, 10, 10);
+  box-shadow: inset 0.1vw 0.1vw 0.1vw 0.05vw rgb(15, 14, 14);
+}
+
+.check-items {
+  position: absolute;
+  background-color: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  width: 10vw;
+  left: 1vw;
+  top: 5vw;
+  border-radius: 1vw;
+  height: 5vh;
+  border: 0.02vw solid aquamarine;
+  transition: box-shadow 0.5s;
+  font-size: 2.5vh;
+  font-weight: 700;
+  letter-spacing: 0.1vw;
+}
+
+.check-items:hover {
+  transition: all 0.5s linear;
+  background-color: aquamarine;
+  box-shadow: 0.2vw 0.2vw 0.2vw 0.05vw rgb(15, 14, 14);
+}
+.check-items:active {
+  transition: all 0.5s linear;
+  border: 0.2vw solid rgb(10, 10, 10);
+  box-shadow: inset 0.1vw 0.1vw 0.1vw 0.05vw rgb(15, 14, 14);
+}

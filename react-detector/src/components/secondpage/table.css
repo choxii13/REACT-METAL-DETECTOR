@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik+Doodle+Triangles&display=swap");
 body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     162deg,
     rgb(37, 48, 48) 5%,
@@ -9,16 +14,14 @@ body {
     rgb(54, 78, 82) 82%,
     rgb(59, 86, 81) 96%
   );
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-container {
   display: flex;
   position: relative;
-  margin: 1vh 27vw;
   width: 50vw;
-  height: 98vh;
+  height: 95vh;
   flex: 2;
   flex-direction: row;
   justify-content: space-around;
@@ -40,7 +43,27 @@ body {
 }
 
 .main-container::-webkit-scrollbar {
-  display: none;
+  width: 1.2vw;
+}
+.main-container::-webkit-scrollbar-track {
+  border-radius: 1vw;
+}
+.main-container::-webkit-scrollbar-thumb {
+  background: rgb(21, 212, 212);
+  background: linear-gradient(
+    162deg,
+    rgb(21, 212, 212),
+    rgb(21, 212, 212),
+    rgb(21, 212, 212),
+    rgba(68, 89, 89, 1) 32%,
+    rgb(21, 212, 212),
+    rgb(54, 78, 82) 82%,
+    rgb(21, 212, 212),
+    rgb(21, 212, 212),
+    rgb(101, 206, 187) 96%
+  );
+  height: 1vh;
+  border-radius: 2vw;
 }
 
 .metal-container,
@@ -63,9 +86,8 @@ body {
   padding: 0vh 1.5vh;
   border-radius: 0.7vh;
   z-index: 1000;
-  border-radius: vh;
+  border-radius: 1vh;
   border: 0.01vh solid rgba(8, 11, 11, 0.3);
-  margin-bottom: 0.5vw;
 }
 
 .metal-button:hover,
@@ -81,7 +103,7 @@ body {
   justify-content: center;
   flex-direction: column;
   z-index: 1000;
-  gap: 1.8vh;
+  gap: 1vh;
 }
 
 .delete {
@@ -101,7 +123,7 @@ body {
 .delete:hover {
   transition: all 0.5s linear;
   border: 0.02vw solid rgb(60, 89, 88);
-  background-color: rgb(7, 216, 210);
+  background-color: rgb(11, 245, 237);
   z-index: 100;
   box-shadow: 0.2vw 0.2vw 0.2vw 0.05vw rgb(15, 14, 14);
 }
@@ -139,16 +161,36 @@ h1 {
     rgb(54, 113, 125) 82%,
     rgb(43, 105, 93) 96%
   );
+
+  letter-spacing: 0.1vw;
+  text-shadow: 0vh 0vh 2vh rgb(0, 0, 0);
 }
 
-.metal-button p,
-.not-metal-button p {
+.mydesign {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  border-radius: 0.3vw;
   text-transform: uppercase;
   font-size: 2.5vh;
-  font-weight: 900;
-  text-shadow: 0.2vh 0.2vh 2vh rgb(225, 13, 13);
+  z-index: 100;
+  text-shadow: 0.2vh 0.2vh 3vh rgb(8, 12, 12);
+  font-weight: 1000;
+  color: black;
+  text-shadow: 0px 0px 10px rgb(238, 0, 0);
 }
-
+.mydesign:hover {
+  transition: all 0.5s linear;
+  border: 0.02vw solid rgb(60, 89, 88);
+  background-color: rgb(7, 216, 210);
+  z-index: 100;
+  box-shadow: 0.2vw 0.2vw 0.2vw 0.05vw rgb(15, 14, 14);
+}
+.mydesign:active {
+  transition: all 0.5s linear;
+  border: 0.1vh solid rgb(10, 10, 10);
+  box-shadow: inset 0.1vw 0.1vw 0.1vw 0.05vw rgb(15, 14, 14);
+}
 .homepage-button {
   position: absolute;
   background-color: none;
@@ -160,6 +202,8 @@ h1 {
   align-items: center;
   cursor: pointer;
   width: 10vw;
+  left: 1vw;
+  top: 2vw;
   border-radius: 1vw;
   height: 5vh;
   border: 0.02vw solid aquamarine;
