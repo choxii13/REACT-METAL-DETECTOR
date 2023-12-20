@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./table.css";
+import { useContext } from "react";
+import { UserContent } from "./SecondContainer";
 
-const MetalContainer = ({ data, DeleteData }) => {
-  const metal = data && data.filter((item) => item.className === "metal");
-
+const MetalContainer = () => {
+  const { content: images, DeleteData } = useContext(UserContent);
+  const metal = images && images.filter((item) => item.className === "metal");
   const handleClick = (id) => {
     DeleteData(id);
   };

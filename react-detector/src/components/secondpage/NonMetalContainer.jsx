@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContent } from "./SecondContainer";
 
-const NonMetalContainer = ({ data, DeleteData }) => {
+const NonMetalContainer = () => {
+  const { content: images, DeleteData } = useContext(UserContent);
+
   const nonmetal =
-    data && data.filter((item) => item.className === "non-metal");
+    images && images.filter((item) => item.className === "non-metal");
 
   const handleClick = (id) => {
     DeleteData(id);

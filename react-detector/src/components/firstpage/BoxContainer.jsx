@@ -6,14 +6,13 @@ import SensorContainer from "./SensorContainer";
 import ButtonContainer from "./ButtonContainer";
 import SavingData from "./SavingData";
 
-const BoxContainer = () => {
-  const { x, y, className, id, drag, link } = useContext(UserContext); // this the use context but its not good coz i have single page
+const BoxContainer = ({ x, y, className, id, drag, link }) => {
+  const obj = { className, id, link };
   const [myboxdatas, dispatch] = useReducer(reducer, myboxdata); // my reducer function
   const { designMetal, designNonMetal, metalSave, notMetalSave, sensor } =
     myboxdatas; // destructuring arguments
   // destructuring for saving data in json-server
 
-  const obj = { className, id, link };
   useEffect(() => {
     // this where i use my argument in box container
     dispatch({

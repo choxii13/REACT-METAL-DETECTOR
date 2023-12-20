@@ -1,14 +1,25 @@
+import NotFound from "../notfoundpage/NotFound";
 import FetchingData from "./FetchingData";
 import ImageContainer from "./ImageContainer";
 import style from "./main.module.css";
 
 const MainContainer = () => {
-  const { data } = FetchingData("http://localhost:5001/Images");
+  const { content: data, err } = FetchingData("http://localhost:5001/Images");
 
   return (
-    <div className={style.containerall}>
-      {data && <ImageContainer data={data} />}
-    </div>
+    <>
+      {err && (
+        <div>
+          {" "}
+          <NotFound />
+        </div>
+      )}
+      {data && (
+        <div className={style.containerall}>
+          <ImageContainer data={data} />
+        </div>
+      )}
+    </>
   );
 };
 

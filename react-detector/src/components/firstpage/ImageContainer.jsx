@@ -58,10 +58,15 @@ const ImageContainer = ({ data }) => {
           />
         </div>
       ))}
-      {/* Im using usecontext for fun but its not applicable coz i have single page */}
-      <UserContext.Provider value={{ x, y, className, id, drag, link }}>
-        <BoxContainer />
-      </UserContext.Provider>
+
+      <BoxContainer
+        x={x}
+        y={y}
+        className={className}
+        id={id}
+        drag={drag}
+        link={link}
+      />
     </>
   );
 };

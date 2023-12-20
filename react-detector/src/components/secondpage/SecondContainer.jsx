@@ -1,20 +1,32 @@
 import { Link } from "react-router-dom";
 import MetalContainer from "./MetalContainer";
 import NonMetalContainer from "./NonMetalContainer";
-import FetchingxDelete from "./FetchingxDelete";
 import "./table.css";
-
+import FetchingData from "../firstpage/FetchingData";
+import NotFound from "../notfoundpage/NotFound";
+import ContainerBoth from "./ContainerBoth";
+import { createContext } from "react";
+export const UserContent = createContext();
 const SecondContainer = () => {
-  const { data, DeleteData } = FetchingxDelete(`http://localhost:5000/Table`);
+  const {
+    content: images,
+    DeleteData,
+    err,
+  } = FetchingData(`http://localhost:5000/Table`);
   return (
     <>
-      <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-        <div className="homepage-button"> Home</div>
-      </Link>
-      <div className="main-container">
-        {data && <MetalContainer data={data} DeleteData={DeleteData} />}
-        {data && <NonMetalContainer data={data} DeleteData={DeleteData} />}
-      </div>
+      {err && (
+        <div>
+          <NotFound />
+        </div>
+      )}
+      <UserContent.Provider value={{ content: images, DeleteData }}>
+        {images && (
+          <div>
+            <ContainerBoth />
+          </div>
+        )}
+      </UserContent.Provider>
     </>
   );
 };

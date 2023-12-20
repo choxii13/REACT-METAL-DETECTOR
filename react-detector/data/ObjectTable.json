@@ -2,23 +2,13 @@
   "Table": [
     {
       "className": "metal",
-      "id": "watch",
-      "link": "images/watch.gif"
+      "id": "magnet",
+      "link": "images/magnet.gif"
     },
     {
       "className": "metal",
-      "id": "gold-ring",
-      "link": "images/gold-ring.gif"
-    },
-    {
-      "className": "metal",
-      "id": "key",
-      "link": "images/key.gif"
-    },
-    {
-      "className": "metal",
-      "id": "cellphone",
-      "link": "images/cellphone.gif"
+      "id": "coin",
+      "link": "images/coin.gif"
     },
     {
       "className": "non-metal",
@@ -27,13 +17,103 @@
     },
     {
       "className": "non-metal",
+      "id": "short",
+      "link": "images/short.gif"
+    },
+    {
+      "className": "non-metal",
       "id": "cat",
       "link": "images/cat.gif"
+    },
+    {
+      "className": "non-metal",
+      "id": "dog",
+      "link": "images/dog.gif"
+    },
+    {
+      "className": "non-metal",
+      "id": "book",
+      "link": "images/Book.gif"
+    },
+    {
+      "className": "non-metal",
+      "id": "shoes",
+      "link": "images/shoes.gif"
+    },
+    {
+      "className": "non-metal",
+      "id": "pillow",
+      "link": "images/pillow.gif"
+    },
+    {
+      "className": "metal",
+      "id": "watch",
+      "link": "images/watch.gif"
+    },
+    {
+      "className": "metal",
+      "id": "sword",
+      "link": "images/sword.gif"
+    },
+    {
+      "className": "metal",
+      "id": "gold",
+      "link": "images/gold.gif"
+    },
+    {
+      "className": "metal",
+      "id": "monitor",
+      "link": "images/monitor.gif"
+    },
+    {
+      "className": "metal",
+      "id": "steel",
+      "link": "images/steel.gif"
+    },
+    {
+      "className": "metal",
+      "id": "bell",
+      "link": "images/bell.gif"
+    },
+    {
+      "className": "metal",
+      "id": "padlock",
+      "link": "images/padlock.gif"
+    },
+    {
+      "className": "metal",
+      "id": "necklace",
+      "link": "images/necklace.gif"
+    },
+    {
+      "className": "metal",
+      "id": "diamond-ring",
+      "link": "images/diamond-ring.gif"
     },
     {
       "className": "metal",
       "id": "cross",
       "link": "images/cross.gif"
+    },
+    {
+      "className": "non-metal",
+      "id": "slippers",
+      "link": "images/slippers.gif"
+    },
+    {
+      "className": "non-metal",
+      "id": "food",
+      "link": "images/food.gif"
+    },
+    {
+      "className": "metal",
+      "id": "key",
+      "link": "images/key.gif"
+    },
+    {
+      "className": "metal",
+      "id": "gold-ring",
+      "link": "images/gold-ring.gif"
     }
   ]
 }

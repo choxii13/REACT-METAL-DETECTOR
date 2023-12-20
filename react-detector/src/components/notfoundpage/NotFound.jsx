@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import "./notfound.css";
-const NotFound = () => {
+const NotFound = ({ err }) => {
+  console.log(err + "2");
   return (
     <>
-      <div className="wawa">state 404 not found!!!!</div>
+      <div className="not-found">status 404 not found!!!!</div>
       <Link to="/" style={{ textDecoration: "none", color: "white" }}>
         <div className="homepage-button"> Home</div>
       </Link>
