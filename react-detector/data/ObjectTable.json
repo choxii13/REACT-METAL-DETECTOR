@@ -14,6 +14,26 @@
       "className": "metal",
       "id": "gold-ring",
       "link": "images/gold-ring.gif"
+    },
+    {
+      "className": "metal",
+      "id": "watch",
+      "link": "images/watch.gif"
+    },
+    {
+      "className": "metal",
+      "id": "sword",
+      "link": "images/sword.gif"
+    },
+    {
+      "className": "metal",
+      "id": "coin",
+      "link": "images/coin.gif"
+    },
+    {
+      "className": "metal",
+      "id": "cellphone",
+      "link": "images/cellphone.gif"
     }
   ]
 }
