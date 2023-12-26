@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./notfound.css";
 const PendingPage = () => {
   return (
