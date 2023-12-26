@@ -2,28 +2,18 @@
   "Table": [
     {
       "className": "metal",
-      "id": "gold-ring",
-      "link": "images/gold-ring.gif"
-    },
-    {
-      "className": "metal",
       "id": "key",
       "link": "images/key.gif"
     },
     {
-      "className": "non-metal",
-      "id": "cat",
-      "link": "images/cat.gif"
+      "className": "metal",
+      "id": "magnet",
+      "link": "images/magnet.gif"
     },
     {
-      "className": "non-metal",
-      "id": "dog",
-      "link": "images/dog.gif"
-    },
-    {
-      "className": "non-metal",
-      "id": "book",
-      "link": "images/Book.gif"
+      "className": "metal",
+      "id": "gold-ring",
+      "link": "images/gold-ring.gif"
     }
   ]
 }

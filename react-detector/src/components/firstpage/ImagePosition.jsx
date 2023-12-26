@@ -1,15 +1,15 @@
 const ImagePosition = (state, action) => {
   switch (action.type) {
     case "complete":
-      return state.map((todo) => {
-        if (todo.id === action.id) {
+      return state.map((pos) => {
+        if (pos.id === action.id) {
           return {
-            ...todo,
-            left: (todo.left = action.x),
-            top: (todo.top = action.y),
+            ...pos,
+            left: (pos.left = action.x),
+            top: (pos.top = action.y),
           };
         } else {
-          return todo;
+          return pos;
         }
       });
 
